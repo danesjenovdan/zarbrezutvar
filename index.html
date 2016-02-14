@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<script src="js/Gif_sequence.js"></script>
+<script src="js/vendor/q.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.5/clipboard.min.js"></script>
+<title>Žar brez utvar</title>
+<meta name="description" content="Pomagaj speči Pahorja še v pečici, s katero ne upravlja njegova PR služba. Prelistaj nabor njegovih najresnejših failov in dodaj na ogenj.">
+<meta property="og:title"              content="Žar brez utvar" />
+<meta property="og:description"        content="Pomagaj speči Pahorja še v pečici, s katero ne upravlja njegova PR služba. Prelistaj nabor njegovih najresnejših failov in dodaj na ogenj." />
+<meta property="og:image"              content="http://jakarobnik.com/zarbrezutvar/img/ogimage_pahor.png" />
+</head>
+<body>
+<script>
+</script>
+<div class="ContentWrapper blackBg">
+  <div class="ContentContainer" style="vertical-align:middle;">
+    <div class="ContentFloat offBallanceLeft centerAlign logo"><img src="img/logo.gif" /> </div>
+    <div class="ContentFloat offBallanceRight leftAlign introTxt"> 
+      <!-- PAST 
+      <p>Na žaru smo pekli predsednika Pahorja. Si mislite?! Obmetavali smo ga s paradižniki in z odprtimi usti poslušali o njegovih pobalinstvih!</p>
+      <p>Toda v resnici smo ga rehabilitirali v tisto, kar si prizadeva postati že ves mandat: v slehernika. Namesto, da bi se ukvarjali z dejstvom, da na najvišji simbolni funkciji suverene države nimamo v vseh pogledih izjemnega, pač pa čisto navadnega človeka, smo se mu smejali. Toda šala je v resnici na naš račun: ko dopustimo, da se kritika zreducira na zabavo, ji porežemo vse kremplje.</p>--> 
+      
+      <!--  PRESENT -->
+      <p>Na žaru pečemo predsednika Pahorja. Si mislite?! Obmetavamo ga s paradižniki in z odprtimi usti poslušamo o njegovih pobalinstvih!</p>
+      <p>Toda v resnici ga rehabilitiramo v tisto, kar si prizadeva postati že ves mandat: v slehernika. Namesto, da bi se ukvarjali z dejstvom, da na najvišji simbolni funkciji suverene države nimamo v vseh pogledih izjemnega, pač pa čisto navadnega človeka, se mu smejimo. Toda šala je v resnici na naš račun: ko dopustimo, da se kritika zreducira na zabavo, ji porežemo vse kremplje.</p>
+    </div>
+  </div>
+</div>
+<div class="ContentWrapper redBg">
+  <div class="ContentContainer">
+    <div class="ContentFloat halfWidth centerAlign whiteTxt">
+      <p>Prav je, da Pahorja spečemo še v pečici, s katero ne upravlja njegova PR služba.
+        Vsakič, ko na Facebook ali Twitter deliš povezavo do katere od spodnjih kartic, temperatura naraste za eno stopinjo.</p>
+      <div class="Cartoon">
+        <div class="loading">
+          <div id="termometerContainer">
+            <div id="termometerScaleSteps">
+              <div class="termometerStep">
+                <div class="DescTxt">Zoglenel</div>
+              </div>
+              <div class="termometerStep">
+                <div class="DescTxt">Prepečen</div>
+              </div>
+              <div class="termometerStep">
+                <div class="DescTxt">Skoraj Prepečen</div>
+              </div>
+              <div class="termometerStep">
+                <div class="DescTxt">Pečen</div>
+              </div>
+              <div class="termometerStep">
+                <div class="DescTxt">Srednje pečen</div>
+              </div>
+              <div class="termometerStep">
+                <div class="DescTxt">Borut po angleško</div>
+              </div>
+              <div class="termometerStep">
+                <div class="DescTxt">Sveža Pahoretina</div>
+              </div>
+            </div>
+            <div id="termometerScale">
+              <div id="TemperatureAmount"></div>
+            </div>
+          </div>
+          <div class="degrees">
+            <div id="TooltipBuble">
+              <h1>Stopnje pečenosti</h1>
+              <p><span>Borut po angleško:</span> 0-20°C</p>
+              <p><span>Sveža Pahoretina:</span> 20-60°C</p>
+              <p><span>Srednje pečen:</span> 60-150°C</p>
+              <p><span>Pečen:</span> 150-300°C</p>
+              <p><span>Skoraj Prepečen:</span> 300-500°C</p>
+              <p><span>Prepečen:</span> 500-800°C</p>
+              <p><span>Zoglenel:</span> 800+°C</p>
+            </div>
+            <img id="TooltipPahi" onmousedown="ShowText()" onmouseout="HideText()" src="img/vprasaj.png" />
+            <h2 id="shareCount"></h2>
+          </div>
+        </div>
+        <div id="pahor"> <img src="img/1.gif"> </div>
+      </div>
+    </div>
+    <div class="ContentFloat halfWidth" id="carouselPart">
+      <div id="PhoneInstudtions">
+        <h3>Podrsaj levo za naslednjo kartico!</h3>
+      </div>
+      <div id="carousel" class="owl-carousel owl-theme">
+        <div class="item"><img src="img/pahor-jansa.gif" alt="BFFs" class="carousel-img">
+          <p>Konec leta 2014 se je goreči predsednik v okviru domoljubnih dolžnosti udeležil dveh za narod sila pomembnih dogodkov. Bil je na uradni proslavi prvega postroja Slovenske vojske, kar se najbrž za njenega vrhovnega poveljnika tudi spodobi, toda <a href="http://www.rtvslo.si/slovenija/pahor-in-jansa-ob-obletnici-prvega-postroja-sv-ja-v-kocevski-reki/354104" target="_blank">zamudil ni niti paravojaške parade v režiji Združenja VOS</a>.</p>
+          <p> S svojo prisotnostjo je iz paintball proslave naredil legitimen domobranski žur, spominske kapacitete vredne njegove lastne zlate ribice Princeske pa je dokazal s tem, da ni opazil niti <a href="http://shrani.si/f/3T/o1/okHGn25/zvezda.jpg" target="_blank">sfotošopane fotke na vabilu</a>, s katere so v maniri sovjetske rdeče zvezde izbrisali prav - rdečo zvezdo. Izgleda je predsednik že pozabil tudi na javno ogorčenje ob razkritju tega dejstva, saj z VOS še naprej sodeluje, <a href="http://www.up-rs.si/up-rs/uprs.nsf/objave/F93490BF86853DDBC1257EFF00293DD9?OpenDocument" target="_blank">letos npr. kot slavnostni govornik</a>.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahor-rupel.gif" alt="Rupsi" class="carousel-img">
+          <p>Leta 2009 je Pahor kot novi mandatar zrihtal job na vseh frontah prilično odpisanemu Dimitriju Ruplu. Ko je padla Janševa vlada, je Rupel izgubil ministrsko listnico, prav zelo dobro pa mu ni kazalo niti v veleposlaniških ambicijah.</p>
+          <p> Nerodno situacijo je razrešil papa Pahor in zbiralcu funkcij ponudil spet novo: Rupel je postal posebni odposlanec za zunanje zadeve v vladnem kabinetu. Njegova najboljša referenca pa je <a href="https://vimeo.com/96723342" target="_blank">po mnenju hrustljavega predsednika to, da je dobro skonektan</a>. Očitno res. Toda zakaj službe potem ni raje dobila kar kakšna Melanija Trump?</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahor-begunska_kriza.png" alt="Begunska kriza" class="carousel-img">
+          <p>Humanitarna katastrofa, v medijih poznana kot <a href="http://danesjenovdan.si/obcasnik/begunci/" target="_blank">begunska kriza</a>, je našega predsednika ujela popolnoma nepripravljenega. Tako zelo, da očitno še vedno zbira misli - oglasil se namreč na to temo še ni prav zelo odločno. Bil je tiho, ko so "domoljubi” prakticirali sovražni govor, pozivali k izgonu prišlekov in postavitvi vaških straž. Molčal je, ko so s ksenofobnimi izjavami medijski prostor smetili politiki. Niti pisnil ni niti, ko smo na južno mejo postavili žiletke.</p>
+          <p> Je pa mojstrsko banaliziral celotno situacijo in jo prelevil v priložnost za širjenje naci-populizna, <a href="https://www.sta.si/2212420/pahor-za-vecer-dogovor-s-hrvasko-je-za-kontrolo-meje-pomembnejsi-od-ograje" target="_blank">rekoč</a>: "Moja naloga je, da držim politično kondicijo slovenskega povezovanja navznoter, da se bomo, ko bo in če bo nastopil čas za vnovično odločanje o velikih stvareh, o tem odločali relativno enotno." Čudno, da se konec lanskega septembra ni pojavil še na <a href="https://www.youtube.com/watch?v=2ectRLJLsjM" target="_blank">naci shodu</a>.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahor-milost.png" alt="Milostljivi" class="carousel-img">
+          <p> Lani jeseni je Pahor <a href="http://www.rtvslo.si/slovenija/zadeva-istrabenz-pahor-pomilostil-obsojenega-bajrovica/374364" target="_blank">pokazal nekaj empatije</a>, ko je s pomilostitvijo iz zaporniških oblačil rešil lastnika Sportine Bahtijarja Bajrovića. Oprostite, ampak sodelovanje pri finančni goljufiji z delnicami Istrabenza pač ne more biti razlog, da zapiramo modno ozaveščene posameznike!</p>
+          <p> Bajrović je sedel zaradi verige dogodkov, ki so se začeli leta 2007 z Istrabenzovo prodajo 7,3-odstotnega deleža Pivovarni Laško. Ta je delež prodala svoji hčerinski družbi Plinfin za 23 milijonov evrov, sledila pa je serija poslovnih vragolij: Pivovarna Laško je prodala družbo Plinfil Sportini za celih 7500 €, Sportina pa je svoj delež Istrabenza nato za 24,9 milijona evrov preprodala podjetju Microtrust, ki je še istega dne sklenilo posel v vrednosti 49,2 milijona evrov s podjetjem Pom-Invest. Vpleteni podjetniki so pobrali 24,3 milijona evrov, za kar so bili obsojeni na zaporne kazni.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahor-kpk.jpg" alt="KPKPK" class="carousel-img">
+          <p>Se spomnite <a href="http://www.mladina.si/151324/odstopil-celoten-senat-kpk/" target="_blank">odstopa celotnega senata</a> tiste sestave KPK, ki si je pod Klemenčičevim vodstvom drznila natakniti tako Janšo kot Jankovića? Se spomnite tega, kaj je Pahor naredil zatem? Za novega predsednika je ustoličil <a href="http://www.delo.si/novice/slovenija/nov-predsednik-kpk-je-boris-stefanec.html" target="_blank">navidez anonimnega Borisa Štefaneca</a>, ki pa se je kaj hitro izkazal za sporen kader. Mediji so hitro izbrskali dejstvo, da je bil praktično do prevzema funkcije novi prvi mož KPK namreč član Pozitivne Slovenije, tedaj največje parlamentarne stranke. Teden dni kasneje sta <a href="http://www.delo.si/novice/politika/odstopila-namestnika-predsednika-kpk-stefaneca.html" target="_blank">odstopila oba namestnika predsednika KPK</a>, leto in pol kasneje pa Štefanec ostaja predsednik <a href="http://danesjenovdan.si/borut/" target="_blank">simbolno razvrednotenega, poteptanega in impotentnega državnega organa</a>, ki je nekoč imel potencial, da penetrira vse taprave riti, <a href="http://www.rtvslo.si/slovenija/sedlar-omejen-mi-je-bil-dostop-do-podatkov-stefanec-dostop-sem-omejil-vsem/376141" target="_blank">danes pa se najraje posveča sam sebi</a>.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahi-dance.gif" alt="Miška mala" class="carousel-img">
+          <p>Na lanski maturantski paradi je predsednik <a href="https://www.youtube.com/watch?v=jT69tBcEh2M" target="_blank">zažural kot na gasilski veselici</a> ter artikulacijo prepustil organu, ki pri šovinistih menda edini razmišlja, torej svoji brizgalni brizgi. Predsednik je zaokrožil po družbenih omrežjih, mediji so pristavili lonček, javnost se je za hip zgrozila, <a href="https://www.youtube.com/watch?v=mCpABRDKvhs" target="_blank">predsednik med zadrževanjem smeha opravičil</a>, zgodilo pa se ni nič.</p>
+          <p> Tovrstnih izpadov smo od Pahorja sicer vajeni: med predsedniško kampanjo je v vlogi gozdarja-za-en-dan pripomnil, da je drevesa "podiral bolje kot babe.”  In razvoj dogodkov? "Miška mala" je ponarodela, Pahor je še vedno predsednik, na južni meji pa nas ograja varuje pred <a href="http://www.rtvslo.si/svet/srbski-obrambni-minister-odstavljen-zaradi-seksisticnih-izjav/380531" target="_blank">bistveno bolj demokratičnimi</a> nekdanjimi sodržavljani iz južnejših bratskih republik.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahor-leaks.gif" alt="PahiLeaks" class="carousel-img">
+          <p><a href="http://www.mladina.si/142813/wikileaks-tudi-o-slovenski-politiki/" target="_blank">Wikileaks je razkril</a>, da je bil tedanji predsednik vlade, danes pa specialiteta izpod peke, v zameno za dvajsetminutni fototermin z ameriškim predsednikom Barrackom Obamo pripravljen prekupčevati z ljudmi?</p>
+          <p> ZDA je namreč <a href="http://www.zurnal24.si/wikileaks-pahor-ponujal-zapor-in-nek2-clanek-103594" target="_blank">ponudil kapacitete za posameznike, ki so jih tedaj zadrževali v Guantanamu</a>. Ameriški veleposlaniki so v depešah, ki so jih v času Pahorjevega mandatarstva pošiljali v Washington, vili roke tudi nad posli v zvezi z gradnjo drugega bloka jedrske elektrarne Krško.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+        <div class="item"><img src="img/pahor-shrug.jpg" alt="ups" class="carousel-img">
+          <p>Pahor je pravzaprav kriv tudi za krivičen referendum o izbrisanih. Mladini je v trenutku šibkosti kar sam priznal, da je storil hudo napako, ko je zamudil rok za vložitev gradiva v presojo Ustavnemu sodišču.</p>
+          <p> Njegovo zamudo so sicer na samem referendumu potem <a href="http://www.mladina.si/94327/referendum-o-koncu-koalicije/" target="_blank">legitimizirali bumbarji</a>, ki imajo tovrstne demokratične mehanizme, kjer večina odloča o pravicah manjšine, za najljubšo nedeljsko aktivnost. Goveja župa pač toliko bolj tekne, če je prigarana s teptanjem pravic marginaliziranih skupin. In predsednik je toliko boljši predsednik, če se ob prevzemu funkcije <a href="http://www.rtvslo.si/slovenija/nevladniki-krog-upravicencev-do-odskodnin-za-izbrisane-preozek/306026" target="_blank"> ne želi javno opravičiti</a> izbrisanim za povzročene krivice.</p>
+          <div class="socialShare">
+            <div class="MainButton cardButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+            <div class="MainButton cardButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ContentWrapper blackBg">
+  <div class="ContentContainer footer centerAlign">
+    <p>Dokuriš lahko tudi tako, da objaviš povezavo kar do celotnega spletnega mesta.</p>
+    <div class="CopyLink">
+      <input type="text" id="copyTarget" value="http://djnd.si/zar" />
+      <div class="MainButton CopyLinkButton" id="copyButton" data-clipboard-action="copy" data-clipboard-target="#copyTarget">Skopiraj!</div>
+    </div>
+    <div class="MainButton footerButton"><a onclick="shareFacebook()">Deli na Facebooku</a></div>
+    <div class="MainButton footerButton"><a onclick="shareTwitter()" target="new">Deli na Twitterju</a></div>
+    <div class="djnd"> <a class="djnd_link" href="http://danesjenovdan.si/" target="_blank"><img src="img/djnd.png"  /></a>
+      <div class="DonateButton"><a href="http://danesjenovdan.si/dolzni/" target="new">Doniraj</a></div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.danesjenovdan.si","*.www.danesjenovdan.si"]]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//zy.si/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 10]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//zy.si/piwik.php?idsite=10" style="border:0;" alt="" /></p></noscript>
+<script src="js/CoreFunctions.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,484 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	-moz-user-select: all !important;
+	-webkit-user-select: all !important;
+	-ms-user-select: all !important;
+}
+p {
+	font-size: 16px;
+	line-height: 1.2em;
+	padding: 10px 40px;
+}
+
+a{
+	color:#6d1216;
+	font-weight:700;		
+}
+
+a:hover{
+	text-decoration:none;	
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color:#FFF;
+	margin-bottom:10px;
+}
+
+
+h4 {
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 40px;
+	color: #b1282f;
+}
+
+
+.whiteTxt p{
+	color: #ffffff;
+	font-weight:600;
+	font-size:20px;
+	text-shadow: 1px 1px 3px rgba(124,31,33,0.75);	
+}
+.whiteTxt p::selection {background: #000000;}
+.whiteTxt p::-moz-selection {background: #000000;}
+
+.introTxt p{
+	font-size:20px;	
+}
+.introTxt p::selection {background: #b1282f;}
+.introTxt p::-moz-selection {background: #b1282f;}
+
+.ContentWrapper {
+	width: 100%;
+	padding: 60px 0 60px 0;
+}
+.ContentContainer {
+	width: 1200px;
+	margin: 0 auto;
+}
+.ContentFloat {
+	display: inline-block;
+	vertical-align: top;
+}
+.halfWidth {
+	width: 49%;
+}
+
+.offBallanceLeft{
+	width:40%;		
+}
+
+.offBallanceRight{
+	width:58%	
+}
+
+.logo{
+	text-align:center;	
+}
+
+.logo img{
+	width:80%;
+}
+
+.blackBg {
+	background: #000000;
+	color: #ffffff;
+}
+.whiteBg {
+	background: #ffffff;
+}
+.redBg {
+	background: #b1282f;
+}
+.leftAlign {
+	text-align: left;
+}
+.centerAlign {
+	text-align: center;
+}
+.rightAlign {
+	text-align: right;
+}
+.footer p{
+	color:#ffffff;
+	font-size:20px;
+}
+
+.footer p::selection {background: #b1282f;}
+.footer p::-moz-selection {background: #b1282f;}
+
+.footer img {
+	vertical-align: middle;
+}
+
+#RoastPahor {
+}
+.socialShare {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+.MainButton {
+	text-align: left;
+	padding: 13px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-weight: 700;
+	display: inline-block;
+	font-size:16px;
+	cursor:pointer;
+}
+
+.MainButton a{
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:normal;	
+}
+
+.cardButton{
+	width: 40%;	
+	background:url(../img/buttonmatch.png) no-repeat #b1282f;
+	background-position:center right;
+}
+
+.footerButton{
+	margin:25px 15px;
+	display:inline-block;
+	width:20%;
+	background:url(../img/buttonFire.png) no-repeat #b1282f;
+	background-position:bottom right;
+}
+
+.DonateButton{
+	text-align: left;
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size:16px;
+	cursor:pointer;
+	background:url(../img/srcek.png) no-repeat;
+	background-position:90% 50%;
+	border:1px solid #ffffff;
+	width:80px;
+	vertical-align: middle;
+}
+
+.DonateButton:hover{
+	background:url(../img/srcek_hover.png) no-repeat;
+	background-position:90% 50%;
+}
+
+.DonateButton a{
+	color:#ffffff;
+	text-decoration:none;	
+	font-weight:normal;
+}
+
+.djnd_link{
+	display:inline-block;
+	margin-right:10px;
+}
+
+.djnd{
+	text-align:center;	
+}
+
+.CopyLink{
+	display:inline-block;
+	background:#ffffff;
+	text-align:right;
+	margin:0 15px;
+	width:22%;
+}
+
+.CopyLink input{
+	display:inline-block;
+	outline:none;
+	border:none;
+	width:45%;
+	margin:0px;
+	padding:5px 0;
+}
+
+.CopyLink input::selection {background: #b1282f;}
+.CopyLink input::-moz-selection {background: #b1282f;}
+
+.CopyLinkButton{
+	display:inline-block;
+	font-family: 'Titillium Web', sans-serif;
+	width:40% !important;
+	margin:0px;
+	background:url(../img/buttonFire.png) no-repeat #b1282f;
+	background-position:bottom right;	
+}
+
+.MainButton:hover, .CopyLinkButton:hover, .footerButton:hover{
+		background-color:#D04149;
+}
+
+.loading {
+	width: 120px;
+	height: 540px;;
+	background: #d04149;
+	display:inline-block;
+	margin:20px 20px 0 0;
+}
+
+#TooltipPahi{
+	width:17px;
+	height:16px;
+	cursor:pointer;
+	position:absolute;
+	margin-top:-15px;
+    margin-left: 52px;
+}
+
+#TooltipBuble{
+	width:150px;
+	position:absolute;
+	margin-top:-225px;
+    margin-left: 30px;
+	text-align:left;
+	background:url(../img/bubleBg.png);
+	background-position:bottom center;
+	padding:15px 15px 30px 15px;
+	display:none;
+}
+
+#TooltipBuble p{
+	font-size:12px;
+	font-weight:100;
+	line-height:18px;
+	padding:0px;	
+}
+#TooltipBuble span{
+	font-weight:700;	
+}
+
+#TooltipBuble h1{
+	font-size:18px;
+	font-weight:bold;
+	color:#b1282f;
+	padding-bottom:15px;	
+}
+
+#termometerContainer{
+	height:490px;	
+}
+
+#termometerScale{
+	background:#6d1216;
+	border-radius:0 5px 5px 5px;
+	width:17px;
+	margin:10px;
+	display:inline-block;
+	text-align:right;
+	overflow:hidden;
+}
+#TemperatureAmount{
+	width:100%;
+	background-color:#eb888e;	
+}
+#termometerScaleSteps{
+	display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin-top: 10px;
+    text-align: right;
+    color: #ffffff;
+	margin-right:-10px;
+	padding-left:10px;
+	z-index:100;
+	font-size:14px;
+	font-weight:700;
+}
+
+.degrees{
+	background:#000000;
+	text-align:center;
+	color:#ffffff;
+	padding:8px 0;
+	min-height:40px;
+}
+
+.termometerStep{
+	vertical-align:top;	
+	background:url(../img/scaleLine.png) no-repeat;
+	background-position:right top;
+	margin-right:-5px;
+	padding-right:15px;
+}
+
+.Cartoon #pahor img{
+	width:100%;	
+	margin-top:30px;	
+	margin-bottom:30px;
+}
+
+#pahor{
+	width: 75%;
+	display: inline-block;
+	    vertical-align: top;
+}
+
+.termometerStep .DescTxt{
+	padding-top:20px;	
+}
+
+#carousel .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#PhoneInstudtions{
+	display:none;	
+}
+
+@media only screen and (max-width: 1370px) {
+.ContentContainer {
+	width: 1200px;
+}
+}
+ @media only screen and (max-width: 1200px) {
+.ContentContainer {
+	width: 100%;
+}
+}
+ @media only screen and (max-width: 1024px) {
+p{
+	font-size:16px;	
+}
+.ContentContainer {
+	width: 100%;
+}
+}
+ @media only screen and (max-width: 800px) {
+#PhoneInstudtions{
+	display:block;
+	text-align:center;
+	padding:10px;
+}
+.logo img{
+	width:50%;
+}
+.ContentWrapper{
+	padding:20px 0;
+}
+p {
+	font-size: 16px;
+}
+
+.whiteTxt p{
+	font-size:18px;
+}
+
+
+.introTxt p{
+	font-size:16px;	
+}
+.introTxt p::selection {background: #b1282f;}
+.introTxt p::-moz-selection {background: #b1282f;}
+
+
+.ContentFloat {
+	display: block;
+}
+.halfWidth, .offBallanceLeft, .offBallanceRight {
+	width: 100%;
+}
+
+.MainButton{
+	font-size:14px;	
+}
+
+
+
+.cardButton{
+	font-size:16px;
+}
+
+.owl-prev, .owl-next{
+	display:none
+}
+
+.item{
+	width: 100% !important;
+}
+
+.carousel{
+	padding-top:100px;
+}
+
+
+.footerButton, .CopyLink{
+	display:block;
+	margin:0 auto;
+	margin-bottom:10px;
+	width:70%;	
+}
+
+.CopyLink{
+	padding-left:25px;
+	margin-top:25px;	
+}
+
+
+
+}
+
+
+}
+/* Push */
+
+@-webkit-keyframes push {
+    50% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes push {
+    50% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.push {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.push:hover,
+.push:focus,
+.push:active {
+    -webkit-animation-name: push;
+    animation-name: push;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
