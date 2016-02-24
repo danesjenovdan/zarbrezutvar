@@ -298,7 +298,7 @@ h4 {
     vertical-align: top;
     margin-top: 10px;
     text-align: right;
-    color: #6d1216;
+    color: #ffffff;
 	margin-right:-10px;
 	padding-left:10px;
 	z-index:100;
@@ -324,7 +324,7 @@ h4 {
 
 .Cartoon #pahor img{
 	width:100%;	
-	margin-top:30px;	f
+	margin-top:30px;
 	margin-bottom:30px;
 }
 
@@ -338,7 +338,7 @@ h4 {
 	vertical-align: top;
 	background:url(../img/senca.png) no-repeat;
 	background-size: 54%;
-    background-position: 48% 87%;
+    background-position: 44% 92%;
 }
 
 .termometerStep .DescTxt{

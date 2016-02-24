@@ -1,6 +1,5 @@
 var treshold = 800;
 var burnSeq;
-//var vsjeSkup = 802;
 var clipboard = new Clipboard('#copyButton');
 
 //Array of sharable links for FB stats
@@ -20,7 +19,7 @@ var ShareArray = [
 //Get FB shares and push to array
 /////////////////////////////
 // ADD TWITTER SHARES HERE///
-var ShareNumberArary = [296];//110+187
+var ShareNumberArary = [92];//
 /////////////////////////////
 /////////////////////////////
 $(document).ready(function() {

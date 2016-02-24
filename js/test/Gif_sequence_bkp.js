@@ -4,7 +4,7 @@ function animatePahi() {
     var body = document.getElementsByTagName('body')[0];
     var container = document.getElementById('pahor');
 
-    var gifs = [1, 2, 3, 4, 5, 6, 7, 8].map(function(id) {
+    var gifs = [1, 2, 3, 4, 5, 6, 7].map(function(id) {
         return {
             path: 'img/' + id + '.gif',
             time: id === 1 ? 100 : 200
@@ -18,7 +18,7 @@ function animatePahi() {
 		4: [0, 0, 1, 1, 2, 2, 3, 3],
 		5: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4],
 		6: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5,],
-		7: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 6, 6, 6, 6, 7,],
+		7: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6,]
     };
 
     function startSequence(i) {
@@ -90,9 +90,6 @@ function animatePahi() {
 				}
 				else if (burnSeq==7){
                 	startSequence(7);
-				}
-				else{
-                	startSequence(8);
 				}
             };
         }, 300);

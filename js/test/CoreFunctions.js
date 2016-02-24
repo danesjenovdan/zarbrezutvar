@@ -1,6 +1,6 @@
 var treshold = 800;
 var burnSeq;
-//var vsjeSkup = 802;
+var vsjeSkup = 802;
 var clipboard = new Clipboard('#copyButton');
 
 //Array of sharable links for FB stats
@@ -20,7 +20,7 @@ var ShareArray = [
 //Get FB shares and push to array
 /////////////////////////////
 // ADD TWITTER SHARES HERE///
-var ShareNumberArary = [296];//110+187
+var ShareNumberArary = [78];//
 /////////////////////////////
 /////////////////////////////
 $(document).ready(function() {
@@ -41,7 +41,7 @@ function sumarize(){
 	function add(a, b) {
 		return a + b;
 	}
-	vsjeSkup = parseInt(skup);
+	//vsjeSkup = parseInt(skup);
 	console.log(vsjeSkup);
 	document.getElementById("shareCount").innerHTML = vsjeSkup+"°C";
 	setHeights();
