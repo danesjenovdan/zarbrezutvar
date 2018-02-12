@@ -26,7 +26,7 @@ var ShareNumberArary = [296];//110+187
 $(document).ready(function() {
     $.each(ShareArray, function(i, val) {
         $.getJSON(val, function(fbdata) {
-			ShareNumberArary.push(fbdata.shares);
+			ShareNumberArary.push(fbdata.share.share_count);
 			//console.log(i);
 			if(i+1 == ShareArray.length){
 				setTimeout(sumarize, 10);
@@ -75,13 +75,13 @@ function setHeights(){
 	for (i=0;i<scaleSteps.length;i++){
 		scaleSteps[i].style.height=TermometerStep+"px";
 	};
-	
-	
+
+
 	document.getElementById("termometerScale").style.height = TermometerScale+"px";
-	
+
 	var TempCurrentcount = vsjeSkup;
 	var TempCurrentState = vsjeSkup/treshold;
-	
+
 	//Termometer progression logic -- shoot me now
 	if(vsjeSkup<21){
 		TempCurrentHeight = TermometerScale-((vsjeSkup/20)*TermometerStep);
@@ -118,13 +118,13 @@ function setHeights(){
 		burnSeq = 7;
 		console.log(7);
 	}
-	
-	document.getElementById("TemperatureAmount").style.height = TempCurrentHeight+"px";	
+
+	document.getElementById("TemperatureAmount").style.height = TempCurrentHeight+"px";
 	for (i=1;i<burnSeq;i++){
 		scaleSteps[7-i].style.color="#6d1216";
 		scaleSteps[7-i].style.background="url(img/scaleLine2.png) no-repeat 100% 0%";
 	};
-	animatePahi();	
+	animatePahi();
 };
 
 //On share FB get current card from url
@@ -134,7 +134,7 @@ function shareFacebook(){
 	 {
 	  method: 'share',
 	  href: CurrentURL,
-	}, function(response){});	
+	}, function(response){});
 };
 
 //On share Twitter get current card from url
@@ -170,11 +170,11 @@ $(document).ready(function() {
 
 //Tooltip quickfix
 function ShowText(){
-	document.getElementById("TooltipBuble").style.display = "block";	
+	document.getElementById("TooltipBuble").style.display = "block";
 };
 function HideText(){
 	myVar = setTimeout(Hide, 5000);
 };
 function Hide(){
-document.getElementById("TooltipBuble").style.display = "none";	
+document.getElementById("TooltipBuble").style.display = "none";
 };
