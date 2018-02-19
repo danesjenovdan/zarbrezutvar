@@ -5,15 +5,15 @@ var clipboard = new Clipboard('#copyButton');
 
 //Array of sharable links for FB stats
 var ShareArray = [
-	"http://graph.facebook.com/?id=http://djnd.si/zar/",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?1",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?2",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?3",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?4",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?5",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?6",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?7",
-	"http://graph.facebook.com/?id=http://djnd.si/zar/?8"
+	"https://graph.facebook.com/?id=http://djnd.si/zar/",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?1",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?2",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?3",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?4",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?5",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?6",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?7",
+	"https://graph.facebook.com/?id=http://djnd.si/zar/?8"
 ];
 
 
