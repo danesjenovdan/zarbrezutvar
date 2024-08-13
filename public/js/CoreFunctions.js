@@ -20,19 +20,20 @@ var ShareArray = [
 //Get FB shares and push to array
 /////////////////////////////
 // ADD TWITTER SHARES HERE///
-var ShareNumberArary = [296];//110+187
+var ShareNumberArary = [296 + 2000];//110+187
 /////////////////////////////
 /////////////////////////////
 $(document).ready(function() {
-    $.each(ShareArray, function(i, val) {
-        $.getJSON(val, function(fbdata) {
-			ShareNumberArary.push(fbdata.share.share_count);
-			//console.log(i);
-			if(i+1 == ShareArray.length){
-				setTimeout(sumarize, 10);
-			};
-        });
-    });
+    // $.each(ShareArray, function(i, val) {
+    //     $.getJSON(val, function(fbdata) {
+		// 	ShareNumberArary.push(fbdata.share.share_count);
+		// 	//console.log(i);
+		// 	if(i+1 == ShareArray.length){
+		// 		setTimeout(sumarize, 10);
+		// 	};
+    //     });
+    // });
+		setTimeout(sumarize, 10);
 });
 
 //Summarize the number of pushes to the array
