@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zar-brez-utvar
+  labels:
+    app: zar-brez-utvar
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zar-brez-utvar
+  template:
+    metadata:
+      labels:
+        app: zar-brez-utvar
+    spec:
+      containers:
+        - name: zar-brez-utvar
+          image: zar-brez-utvar
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 50Mi
+              cpu: 50m
+            limits:
+              memory: 50Mi
+              cpu: 50m
