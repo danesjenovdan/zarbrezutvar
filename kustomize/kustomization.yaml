@@ -8,4 +8,4 @@ resources:
 images:
   - name: zar-brez-utvar
     newName: rg.fr-par.scw.cloud/djnd/zar-brez-utvar
-    newTag: 'ac0399ff6c9aae40bc509760c909d0fedfa920d7' #
+    newTag: '2ffb01886482e57eaf0bbdb07c80e5a1aea330f5'
